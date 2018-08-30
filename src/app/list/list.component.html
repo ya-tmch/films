@@ -1,0 +1,9 @@
+<div *ngFor="let film of films()" class="film-item">
+    <a [routerLink]="'/film/' + film.imdbID">
+        <img [src]="film.Poster" [alt]="film.Title" class="film-poster">
+    </a>
+
+    <span>{{ film.Title }}</span>
+
+    <button type="button" (click)="removeFromSaved(film.imdbID)">Remove</button>
+</div>

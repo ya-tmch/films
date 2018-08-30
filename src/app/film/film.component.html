@@ -1,0 +1,10 @@
+<div *ngIf="film">
+    <img [src]="film.Poster" [alt]="film.Title" class="film-poster">
+
+    <div class="film-details">
+        <div>Title: {{ film.Title }}</div>
+        <div>Year: {{ film.Year }}</div>
+        <div>Actors: {{ film.Actors }}</div>
+        <div>imdbID: {{ film.imdbID }}</div>
+    </div>
+</div>
